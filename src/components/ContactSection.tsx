@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { GitBranch, Linkedin, Mail, Download } from "lucide-react";
 import { useMode } from "@/context/ModeContext";
 import { profile } from "@/data/profile";
 

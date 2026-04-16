@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Download } from "lucide-react";
+import { GitBranch, Linkedin, Download } from "lucide-react";
 import { useMode } from "@/context/ModeContext";
 import { profile } from "@/data/profile";
 import Avatar3D from "./Avatar3D";
