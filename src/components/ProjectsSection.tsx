@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMode } from "@/context/ModeContext";
 import { projects } from "@/data/projects";
 
-const transition = { duration: 0.6, ease: [0.22, 1, 0.36, 1] };
+const transition = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
 
 const ProjectsSection = () => {
   const { mode } = useMode();

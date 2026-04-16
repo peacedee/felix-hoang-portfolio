@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { GitBranch, Linkedin, Mail, Download } from "lucide-react";
+import { Mail, Download } from "lucide-react";
 import { useMode } from "@/context/ModeContext";
 import { profile } from "@/data/profile";
+import { GithubIcon, LinkedinIcon } from "./SocialIcons";
 
 const ContactSection = () => {
   const { mode } = useMode();
@@ -24,10 +25,10 @@ const ContactSection = () => {
 
         <div className="flex items-center justify-center gap-6 mb-8">
           <a href={profile.social.github} className="text-foreground-muted hover:text-foreground transition-colors">
-            <Github size={22} />
+            <GithubIcon size={22} />
           </a>
           <a href={profile.social.linkedin} className="text-foreground-muted hover:text-foreground transition-colors">
-            <Linkedin size={22} />
+            <LinkedinIcon size={22} />
           </a>
           <a href={`mailto:${profile.social.email}`} className="text-foreground-muted hover:text-foreground transition-colors">
             <Mail size={22} />

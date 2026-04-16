@@ -1,12 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { GitBranch, Linkedin, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { useMode } from "@/context/ModeContext";
 import { profile } from "@/data/profile";
 import Avatar3D from "./Avatar3D";
+import { GithubIcon, LinkedinIcon } from "./SocialIcons";
 
 const transition = {
   duration: 0.6,
-  ease: [0.22, 1, 0.36, 1],
+  ease: [0.22, 1, 0.36, 1] as const,
 };
 
 const HeroSection = () => {
@@ -63,10 +64,10 @@ const HeroSection = () => {
 
               <div className="flex items-center gap-4">
                 <a href={profile.social.github} className="text-foreground-muted hover:text-foreground transition-colors">
-                  <Github size={20} />
+                  <GithubIcon />
                 </a>
                 <a href={profile.social.linkedin} className="text-foreground-muted hover:text-foreground transition-colors">
-                  <Linkedin size={20} />
+                  <LinkedinIcon />
                 </a>
               </div>
             </motion.div>

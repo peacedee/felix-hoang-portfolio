@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMode } from "@/context/ModeContext";
 import { experiences } from "@/data/experience";
 
-const transition = { duration: 0.6, ease: [0.22, 1, 0.36, 1] };
+const transition = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
 
 const ExperienceSection = () => {
   const { mode } = useMode();
@@ -33,7 +33,7 @@ const ExperienceSection = () => {
             {filtered.map((exp) => (
               <div
                 key={exp.company + exp.role}
-                className={`p-6 rounded-xl border border-border bg-card`}
+                className="p-6 rounded-xl border border-border bg-card"
               >
                 <div className="flex items-start justify-between mb-2">
                   <div>
