@@ -1,7 +1,7 @@
 export const profile = {
   name: "Hoàng Thanh Bình",
   roles: {
-    developer: "Frontend / Fullstack Developer",
+    developer: "Fullstack Developer",
     qa: "Quality Control Engineer",
   },
   intro: {
@@ -10,11 +10,12 @@ export const profile = {
     qa: "I am currently working as a QC Engineer, focusing on testing, quality assurance, and delivering stable products. My developer background helps me understand systems deeply.",
   },
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    email: "thanh.binh@example.com",
+    github: "https://github.com/binhnexusx",
+    linkedin: "https://www.linkedin.com/in/binhhoang-qa/",
+    email: "peace.dee.me@gmail.com",
   },
-  cvUrl: "#",
+  cvUrl:
+    "https://drive.google.com/file/d/1-oLtn93avs6mpwlG-jKJ1syFqtmncVOV/view?usp=sharing",
 };
 
 export const highlights = [
