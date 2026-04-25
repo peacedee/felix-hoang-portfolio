@@ -39,8 +39,8 @@ const Avatar3D = () => {
   const color = mode === "developer" ? "#F97316" : "#22C55E";
 
   return (
-    <div className="w-full h-[350px] md:h-[400px]">
-      <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+    <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden">
+      <Canvas camera={{ position: [0, 0, 5], fov: 45 }} style={{ position: "absolute", inset: 0 }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} intensity={1} />
         <pointLight position={[-10, -10, -10]} intensity={0.3} color={color} />

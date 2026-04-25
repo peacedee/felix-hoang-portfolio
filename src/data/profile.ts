@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Hoàng Thanh Bình",
+  name: "Felix Hoang",
   roles: {
     developer: "Fullstack Developer",
     qa: "Quality Control Engineer",

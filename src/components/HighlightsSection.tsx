@@ -16,7 +16,9 @@ const HighlightsSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              transition={{ delay: i * 0.08, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -4, scale: 1.01 }}
+              whileTap={{ scale: 0.99 }}
               className={`h-full p-4 sm:p-6 rounded-xl border border-border bg-card hover:border-opacity-50 transition-colors ${
                 isDev ? "hover:border-dev/30" : "hover:border-qa/30"
               }`}

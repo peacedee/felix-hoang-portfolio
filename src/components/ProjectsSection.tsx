@@ -6,18 +6,18 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.12, delayChildren: 0.05 },
+    transition: { staggerChildren: 0.1, delayChildren: 0.05 },
   },
   exit: { opacity: 0, transition: { duration: 0.3 } },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 24, filter: "blur(6px)" },
+  hidden: { opacity: 0, y: 18, filter: "blur(4px)" },
   visible: {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
   },
 };
 
@@ -54,8 +54,8 @@ const ProjectsSection = () => {
               <motion.div
                 key={project.title}
                 variants={cardVariants}
-                whileHover={{ y: -6, scale: 1.01 }}
-                transition={{ duration: 0.25 }}
+                whileHover={{ y: -5, scale: 1.012 }}
+                transition={{ type: "spring", stiffness: 320, damping: 24 }}
                 className="relative group h-full"
               >
                 {/* Card */}

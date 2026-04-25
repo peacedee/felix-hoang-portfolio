@@ -6,18 +6,18 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.15, delayChildren: 0.1 },
+    transition: { staggerChildren: 0.12, delayChildren: 0.06 },
   },
   exit: { opacity: 0, transition: { duration: 0.3 } },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, x: -30, filter: "blur(6px)" },
+  hidden: { opacity: 0, x: -22, filter: "blur(4px)" },
   visible: {
     opacity: 1,
     x: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
   },
 };
 
@@ -87,8 +87,8 @@ const ExperienceSection = () => {
 
                   {/* Card */}
                   <motion.div
-                    whileHover={{ y: -3, boxShadow: isDev ? "0 8px 30px -8px rgba(251,146,60,0.25)" : "0 8px 30px -8px rgba(96,165,250,0.25)" }}
-                    transition={{ duration: 0.25 }}
+                    whileHover={{ y: -4, scale: 1.005, boxShadow: isDev ? "0 12px 32px -10px rgba(251,146,60,0.25)" : "0 12px 32px -10px rgba(96,165,250,0.25)" }}
+                    transition={{ type: "spring", stiffness: 320, damping: 24 }}
                     className={`relative p-6 rounded-2xl border border-border bg-card overflow-hidden group`}
                   >
                     {/* Glow on hover */}

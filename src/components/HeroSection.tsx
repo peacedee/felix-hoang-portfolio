@@ -6,7 +6,7 @@ import Avatar3D from "./Avatar3D";
 import { GithubIcon, LinkedinIcon } from "./SocialIcons";
 
 const transition = {
-  duration: 0.6,
+  duration: 0.55,
   ease: [0.22, 1, 0.36, 1] as const,
 };
 
@@ -22,9 +22,9 @@ const HeroSection = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={mode}
-              initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+              initial={{ opacity: 0, y: 18, filter: "blur(6px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+              exit={{ opacity: 0, y: -14, filter: "blur(5px)" }}
               transition={transition}
             >
               <p className={`text-sm font-medium mb-2 ${isDev ? "text-dev" : "text-qa"}`}>
@@ -42,7 +42,9 @@ const HeroSection = () => {
 
               <div className="flex items-center gap-4 mb-8">
                 <motion.a
+                  whileHover={{ y: -2, scale: 1.02 }}
                   whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 420, damping: 24 }}
                   href="#projects"
                   className={`px-6 py-3 rounded-lg font-medium text-sm transition-colors ${
                     isDev
@@ -53,7 +55,9 @@ const HeroSection = () => {
                   View Projects
                 </motion.a>
                 <motion.a
+                  whileHover={{ y: -2, scale: 1.02 }}
                   whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 420, damping: 24 }}
                   href={profile.cvUrl}
                   className="flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium border border-border text-foreground hover:bg-secondary transition-colors"
                 >
@@ -73,7 +77,7 @@ const HeroSection = () => {
             </motion.div>
           </AnimatePresence>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center overflow-hidden">
             <Avatar3D />
           </div>
         </div>
