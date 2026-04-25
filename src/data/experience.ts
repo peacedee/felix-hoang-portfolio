@@ -9,11 +9,32 @@ export interface Experience {
   logo?: string;
   description: string[];
   github?: string;
+  links?: { label: string; url: string }[];
   mode: "developer" | "qa";
 }
 
 export const experiences: Experience[] = [
   // ── Developer mode ────────────────────────────────────
+  {
+    company: "DecoVerse (Graduation Capstone)",
+    role: "Project Lead & Full-Stack Developer",
+    type: "Capstone Project",
+    period: "Feb 2026 – Mar 2026",
+    duration: "1 month",
+    workMode: "Team project",
+    tech: "NestJS, React, TypeScript, Three.js, Hugging Face, Gemini AI, Jira, Katalon Studio, Vercel, Railway",
+    description: [
+      "Led a 4-member team to build DecoVerse, an AI-powered interior design collaboration platform bridging communication gaps between architects and clients.",
+      "Designed system architecture, managed Git workflows, and contributed 24,000+ lines of code to deliver a scalable platform with real-time collaboration and 3D visualization.",
+      "Integrated Hugging Face, Gemini AI, and Three.js to transform text prompts and images into structured data and interactive 3D room layouts, accelerating early-stage design ideation.",
+      "Managed 4 Agile/Scrum sprints with Jira; executed 115 manual test scenarios and automated critical flows with Katalon Studio, achieving 100% automated test pass rate.",
+    ],
+    links: [
+      { label: "Frontend", url: "https://github.com/binhnexusx/DecoVerse-Frontend" },
+      { label: "Backend", url: "https://github.com/binhnexusx/DecoVerse-Backend" },
+    ],
+    mode: "developer",
+  },
   {
     company: "Zimaw LLC",
     role: "Frontend Developer",

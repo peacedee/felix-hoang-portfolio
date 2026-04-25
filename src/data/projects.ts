@@ -10,28 +10,6 @@ export interface Project {
 export const projects: Project[] = [
   // Developer Projects
   {
-    title: "DecoVerse – AI Interior Design Collaboration (Capstone)",
-    description:
-      "Graduation capstone (Feb–Mar 2026). Led a 4-member team building an AI-powered interior design collaboration platform to bridge communication between architects and clients, with real-time collaboration and interactive 3D visualization. Integrated Hugging Face, Gemini AI, and Three.js to transform text prompts/images into structured data and 3D room layouts; executed 115 manual test scenarios and automated critical flows with Katalon Studio; deployed on Vercel and Railway.",
-    tech: [
-      "NestJS",
-      "React",
-      "TypeScript",
-      "Three.js",
-      "Hugging Face",
-      "Gemini",
-      "Jira",
-      "Katalon Studio",
-      "Vercel",
-      "Railway",
-    ],
-    links: [
-      { label: "Frontend", url: "https://github.com/binhnexusx/DecoVerse-Frontend" },
-      { label: "Backend", url: "https://github.com/binhnexusx/DecoVerse-Backend" },
-    ],
-    mode: "developer",
-  },
-  {
     title: "Ticketify – Hotel Booking System",
     description:
       "A full-stack hotel booking platform with room search/filtering, booking workflows, and admin modules. Built with React, TypeScript and RESTful APIs. Deployed responsive interfaces from Figma designs.",
